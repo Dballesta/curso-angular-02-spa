@@ -37,9 +37,8 @@ export class BuscarHeroesComponent implements OnInit {
     });
   }
 
-
   verHeroe(index: number) {
-    this.router.navigate(['/heroe', index]);
+    this.router.navigate( ['/heroe', index] );
   }
 
 }

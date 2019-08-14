@@ -9,7 +9,8 @@
 <ng-template #elseTemplate>
   <div class="card-columns">
 
-    <app-tarjeta-heroe [heroe]="heroe" *ngFor="let heroe of heroes; let i = index"></app-tarjeta-heroe>
+    <!-- Escucha del objeto interno -->
+    <app-tarjeta-heroe (heroeSeleccionado) = " verHeroe( $event ) " [heroe]="heroe" [index]="heroe.id" *ngFor="let heroe of heroes"></app-tarjeta-heroe>
 
   </div>
 </ng-template>
